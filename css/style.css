@@ -132,7 +132,8 @@ img {
 /* Desktop 1160px BONUS */
 @media screen and (max-width:1160px) {
     .container {
-        max-width: 100%;
+        width: auto;
+        max-width: 1140px;
     }
 }
 
@@ -146,7 +147,7 @@ img {
 /* Mobile 480px */
 @media screen and (max-width:480px) {
     .row {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .lessons .col,
@@ -157,6 +158,10 @@ img {
 
     .col:not(:first-child) {
         margin-top: 4rem
+    }
+
+    .lessons {
+        padding-bottom: 3rem;
     }
 
     .steps {
